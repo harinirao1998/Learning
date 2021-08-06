@@ -1,0 +1,6 @@
+-> Created a connection
+-> Loaded the template into 
+-> Imported data from business account.csv into tables
+->Mapped the source data columns to target data columns
+->Heap space increase : How do this. 
+-> automatic drop down is not being shown. 

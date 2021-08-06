@@ -1,0 +1,33 @@
+1)	Demo current data manipulation activities using SQL.
+•	Copy pasting of values from the legacy extract to the templates.
+•	Delete all the other rows that are not Saved / Submitted.
+•	Change the data to format "YYY-MM-DD"
+•	Change the date time field to format "YYY-MM-DD HH:MM:SS"
+•	Legacy extract has _vod in account names like Person_accout_vod, We use find and replace to remove the _vod
+•	Removing of values from selective cells (HCO Id's for Group Account)
+•	Concatenating of 2 names from different columns in the format "Anand, Prashanthi" and using the same to lookup Filtering for 1's and 0's in a column
+
+2)	Mappings:
+•	When there is value Submitted - We use the if function to mark it as true and others as false.
+•	There are values under account types and specialties, where we map to accepted set of values. Eg: Others is unaccepted. We add another column, filter for only "others", add the accepted value Other in the new column.
+•	Copy paste of columns from one csv to another
+•	VLOOKUP performed to extract External IDs
+•	Find and Replace Yes / No values to True and False
+
+3)	Other Questions?
+•	How do we rename columns?
+•	How do we export the file and upload to OneDrive?
+•	In case of foreign characters will SQL handle it ?
+
+
+
+Project explanation
+
+Novartis is in different countries, globally novartis wants to take all this and put this into one system. Transferring the data from legacy systems 
+transfer them into new ways and give them to the data migration to push them into salesforce. 
+
+Loads:-
+-> test load(1st template)
+-> qa load(checking if the standards are assured)
+-> production load(rework everything again)
+
